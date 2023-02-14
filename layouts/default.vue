@@ -38,11 +38,9 @@
         </v-list-item>
       </v-list>
       <v-spacer></v-spacer>
-      <v-card flat>
-        <v-card-actions>
-          <v-btn text plain block>Гарах</v-btn>
-        </v-card-actions>
-      </v-card>
+      <v-btn text plain tile block
+        >Гарах <v-icon>mdi-exit-to-app</v-icon></v-btn
+      >
     </v-navigation-drawer>
     <v-main>
       <nuxt />

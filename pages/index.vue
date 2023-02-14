@@ -5,21 +5,29 @@
         ><v-card>
           <v-card-title primary-title> Бүртгэл </v-card-title>
           <v-card-subtitle
-            >Total
-            <span class="text--primary font-weight-bold">48.5% Growth 😎</span>
-            this month</v-card-subtitle
+            >Өнгөрсөн сараас
+            <span class="text--primary font-weight-bold">48.5% илүү 😎</span>
+            эмийн нийлүүлэлт</v-card-subtitle
           ><v-card-actions class="d-flex justify-space-between">
             <div class="d-flex justify-center align-center">
               <v-btn color="success" fab elevation="0" small
                 ><v-icon>mdi-pill</v-icon></v-btn
               >
-              <v-card-text class="text--secondary"> Эм </v-card-text>
+              <v-card-text class="text--secondary">
+                <span class="text-h5 font-weight-bold text--primary">128</span>
+                <br />
+                Эм
+              </v-card-text>
             </div>
             <div class="d-flex justify-center align-center">
               <v-btn dark color="indigo" fab elevation="0" small
                 ><v-icon>mdi-toolbox</v-icon></v-btn
               >
-              <v-card-text class="text--secondary"> Төхөөрөмж </v-card-text>
+              <v-card-text class="text--secondary">
+                <span class="text-h5 font-weight-bold text--primary">128</span>
+                <br />
+                Төхөөрөмж
+              </v-card-text>
             </div>
             <div class="d-flex justify-center align-center">
               <v-btn color="yellow" fab elevation="0" small
@@ -33,21 +41,29 @@
         ><v-card>
           <v-card-title primary-title> Бүртгэл </v-card-title>
           <v-card-subtitle
-            >Total
-            <span class="text--primary font-weight-bold">48.5% Growth 😎</span>
-            this month</v-card-subtitle
+            >Өнгөрсөн сараас
+            <span class="text--primary font-weight-bold">48.5% илүү 😎</span>
+            эмийн нийлүүлэлт</v-card-subtitle
           ><v-card-actions class="d-flex justify-space-between">
             <div class="d-flex justify-center align-center">
               <v-btn color="success" fab elevation="0" small
                 ><v-icon>mdi-pill</v-icon></v-btn
               >
-              <v-card-text class="text--secondary"> Эм </v-card-text>
+              <v-card-text class="text--secondary">
+                <span class="text-h5 font-weight-bold text--primary">128</span>
+                <br />
+                Эм
+              </v-card-text>
             </div>
             <div class="d-flex justify-center align-center">
               <v-btn dark color="indigo" fab elevation="0" small
                 ><v-icon>mdi-toolbox</v-icon></v-btn
               >
-              <v-card-text class="text--secondary"> Төхөөрөмж </v-card-text>
+              <v-card-text class="text--secondary">
+                <span class="text-h5 font-weight-bold text--primary">128</span>
+                <br />
+                Төхөөрөмж
+              </v-card-text>
             </div>
             <div class="d-flex justify-center align-center">
               <v-btn color="yellow" fab elevation="0" small
@@ -62,21 +78,29 @@
         ><v-card>
           <v-card-title primary-title> Бүртгэл </v-card-title>
           <v-card-subtitle
-            >Total
-            <span class="text--primary font-weight-bold">48.5% Growth 😎</span>
-            this month</v-card-subtitle
+            >Өнгөрсөн сараас
+            <span class="text--primary font-weight-bold">48.5% илүү 😎</span>
+            эмийн нийлүүлэлт</v-card-subtitle
           ><v-card-actions class="d-flex justify-space-between">
             <div class="d-flex justify-center align-center">
               <v-btn color="success" fab elevation="0" small
                 ><v-icon>mdi-pill</v-icon></v-btn
               >
-              <v-card-text class="text--secondary"> Эм </v-card-text>
+              <v-card-text class="text--secondary">
+                <span class="text-h5 font-weight-bold text--primary">128</span>
+                <br />
+                Эм
+              </v-card-text>
             </div>
             <div class="d-flex justify-center align-center">
               <v-btn dark color="indigo" fab elevation="0" small
                 ><v-icon>mdi-toolbox</v-icon></v-btn
               >
-              <v-card-text class="text--secondary"> Төхөөрөмж </v-card-text>
+              <v-card-text class="text--secondary">
+                <span class="text-h5 font-weight-bold text--primary">128</span>
+                <br />
+                Төхөөрөмж
+              </v-card-text>
             </div>
             <div class="d-flex justify-center align-center">
               <v-btn color="yellow" fab elevation="0" small
@@ -91,21 +115,29 @@
         ><v-card>
           <v-card-title primary-title> Бүртгэл </v-card-title>
           <v-card-subtitle
-            >Total
-            <span class="text--primary font-weight-bold">48.5% Growth 😎</span>
-            this month</v-card-subtitle
+            >Өнгөрсөн сараас
+            <span class="text--primary font-weight-bold">48.5% илүү 😎</span>
+            эмийн нийлүүлэлт</v-card-subtitle
           ><v-card-actions class="d-flex justify-space-between">
             <div class="d-flex justify-center align-center">
               <v-btn color="success" fab elevation="0" small
                 ><v-icon>mdi-pill</v-icon></v-btn
               >
-              <v-card-text class="text--secondary"> Эм </v-card-text>
+              <v-card-text class="text--secondary">
+                <span class="text-h5 font-weight-bold text--primary">128</span>
+                <br />
+                Эм
+              </v-card-text>
             </div>
             <div class="d-flex justify-center align-center">
               <v-btn dark color="indigo" fab elevation="0" small
                 ><v-icon>mdi-toolbox</v-icon></v-btn
               >
-              <v-card-text class="text--secondary"> Төхөөрөмж </v-card-text>
+              <v-card-text class="text--secondary">
+                <span class="text-h5 font-weight-bold text--primary">128</span>
+                <br />
+                Төхөөрөмж
+              </v-card-text>
             </div>
             <div class="d-flex justify-center align-center">
               <v-btn color="yellow" fab elevation="0" small
@@ -113,6 +145,35 @@
               >
               <v-card-text class="text--secondary"> hello </v-card-text>
             </div>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row
+      ><v-col lg="3" md="6" cols="12">
+        <v-card class="mx-auto" outlined>
+          <v-list-item three-line>
+            <v-list-item-content>
+              <div class="text-overline mb-4">2023.02.15</div>
+              <v-list-item-title class="text-h5 mb-1">
+                Эмийн жагсаалт
+              </v-list-item-title>
+              <v-list-item-subtitle
+                >Greyhound divisely hello coldly
+                fonwderfully</v-list-item-subtitle
+              >
+            </v-list-item-content>
+
+            <v-avatar size="72px">
+              <v-img
+                alt="Avatar"
+                src="https://e0.pxfuel.com/wallpapers/43/832/desktop-wallpaper-doge-astro-samurai-doge-thumbnail.jpg"
+              ></v-img>
+            </v-avatar>
+          </v-list-item>
+
+          <v-card-actions>
+            <v-btn outlined rounded text> Дэлгэрэнгүй </v-btn>
           </v-card-actions>
         </v-card>
       </v-col></v-row
@@ -141,6 +202,7 @@
 export default {
   data() {
     return {
+      value: [42000003, 400046, 600075, 51000000, 590000, 610000, 76000000],
       headers: [
         {
           text: "Эмийн нэр",
