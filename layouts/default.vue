@@ -1,118 +1,89 @@
 <template>
-  <v-app dark>
-    <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
+  <v-app>
+    <v-navigation-drawer app>
+      <v-container class="d-flex justify-center align-center" grid-list-xs>
+        <v-avatar size="72px">
+          <v-img
+            alt="Avatar"
+            src="https://e0.pxfuel.com/wallpapers/43/832/desktop-wallpaper-doge-astro-samurai-doge-thumbnail.jpg"
+          ></v-img>
+        </v-avatar>
+      </v-container>
+
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="text-h6"> Зуунбилэг </v-list-item-title>
+          <v-list-item-subtitle> Dev team </v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
       <v-list>
         <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
+          color="teal darken-1"
+          link
+          v-for="nav in navs"
+          :key="nav"
+          :to="nav.link"
         >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
+          <v-list-item-icon
+            ><v-icon>{{ nav.icon }}</v-icon></v-list-item-icon
+          >
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title class="text--secondary">{{
+              nav.title
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <v-spacer></v-spacer>
+      <v-card flat>
+        <v-card-actions>
+          <v-btn text plain block>Гарах</v-btn>
+        </v-card-actions>
+      </v-card>
     </v-navigation-drawer>
-    <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
-      <v-toolbar-title>{{ title }}</v-toolbar-title>
-      <v-spacer />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
-    </v-app-bar>
     <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
+      <nuxt />
     </v-main>
-    <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
   </v-app>
 </template>
 
 <script>
 export default {
-  name: 'DefaultLayout',
-  data () {
+  name: "DefaultLayout",
+  data() {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
+      navs: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
+          link: "/",
+          icon: "mdi-home",
+          title: "Нүүр",
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
+          link: "/medicine",
+          icon: "mdi-pill",
+          title: "Эмийн бүртгэл",
+        },
+        {
+          link: "/tools",
+          icon: "mdi-toolbox",
+          title: "Төхөөрөмжийн бүртгэл",
+        },
+        {
+          link: "/edit",
+          icon: "mdi-pen",
+          title: "Бүртгэл нэмэх",
+        },
+        {
+          link: "/profile",
+          icon: "mdi-account",
+          title: "Хэрэглэгч",
+        },
       ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
-    }
-  }
-}
+    };
+  },
+};
 </script>
+<style></style>
