@@ -12,8 +12,12 @@
 
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="text-h6"> Зуунбилэг </v-list-item-title>
-          <v-list-item-subtitle> Dev team </v-list-item-subtitle>
+          <v-list-item-title class="text-h6 d-flex justify-center">
+            Зуунбилэг
+          </v-list-item-title>
+          <v-list-item-subtitle class="d-flex justify-center">
+            Dev team
+          </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
 

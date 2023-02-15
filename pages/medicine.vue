@@ -1,11 +1,6 @@
 <template>
   <v-container grid-list-xs>
-    <v-tabs
-      v-model="value"
-      color="teal darken-1"
-      dark
-      slider-color="teal darken-1"
-    >
+    <v-tabs v-model="value" color="teal darken-1" slider-color="teal darken-1">
       <v-tab> Эмийн жагсаалт <v-icon class="ml-2">mdi-list-box</v-icon></v-tab>
       <v-tab-item>
         <v-card flat
@@ -107,6 +102,74 @@
           </v-card-actions>
         </v-card>
       </v-tab-item>
+      <v-tab> Эм <v-icon class="ml-2">mdi-pill</v-icon> </v-tab>
+      <v-tab-item>
+        <v-container grid-list-xs>
+          <v-col cols="6"
+            ><v-text-field
+              color="teal darken-1"
+              name="name"
+              append-icon="mdi-magnify"
+              label="Хайх"
+              id="id"
+            ></v-text-field
+          ></v-col>
+
+          <v-row
+            ><v-col v-for="cardi in 12" :key="cardi" cols="6" md="2">
+              <v-card class="mx-auto" max-width="344">
+                <v-img
+                  src="https://cdn.theatlantic.com/thumbor/tNoE87U1vaH-U0osP0q3J0on9fo=/400x0:1429x1029/540x540/media/img/mt/2021/10/molnu_capsule3/original.jpg"
+                  height="200px"
+                ></v-img>
+
+                <v-card-title> Aspirin </v-card-title>
+
+                <v-card-subtitle> 1,000 миллиграм </v-card-subtitle>
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </v-card-text>
+                <v-card-actions>
+                  <v-btn @click="shirheg++" icon color="success" text>
+                    <v-icon>mdi-plus</v-icon>
+                  </v-btn>
+                  <v-text-field
+                    name="name"
+                    id="id"
+                    v-model="shirheg"
+                    color="teal"
+                  ></v-text-field>
+                  <v-btn @click="shirheg--" icon color="error " text>
+                    <v-icon>mdi-minus</v-icon>
+                  </v-btn>
+                  <v-spacer></v-spacer>
+
+                  <v-btn icon @click="show = !show">
+                    <v-icon>{{
+                      show ? "mdi-chevron-up" : "mdi-chevron-down"
+                    }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+
+                <v-expand-transition>
+                  <div v-show="show">
+                    <v-divider></v-divider>
+
+                    <v-card-text>
+                      I'm a thing. But, like most politicians, he promised more
+                      than he could deliver. You won't have time for sleeping,
+                      soldier, not with all the bed making you'll be doing. Then
+                      we'll go with that data file! Hey, you add a one and two
+                      zeros to that or we walk! You're going to do his laundry?
+                      I've got to find a way to escape.
+                    </v-card-text>
+                  </div>
+                </v-expand-transition>
+              </v-card></v-col
+            ></v-row
+          >
+        </v-container>
+      </v-tab-item>
     </v-tabs>
   </v-container>
 </template>
@@ -115,6 +178,8 @@
 export default {
   data() {
     return {
+      shirheg: 1,
+      show: false,
       snackbar: false,
       text: "Амжилттай нэмэгдлээ",
       valid: false,
