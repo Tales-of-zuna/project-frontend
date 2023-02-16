@@ -118,31 +118,38 @@
           ></v-col>
 
           <v-row
-            ><v-col v-for="cardi in 12" :key="cardi" cols="6" md="2">
+            ><v-col v-for="cardi in toolsdata" :key="cardi" cols="6" md="2">
               <v-card class="mx-auto" max-width="344">
-                <v-img
-                  src="https://media.istockphoto.com/id/1159847028/photo/medical-stethoscope-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=pWg7zs2AZmeSvdjnWRxlx5Y0wwgnGMpJlOQi065D6mM="
-                  height="200px"
-                ></v-img>
+                <v-img :src="cardi.img" height="200px"></v-img>
 
-                <v-card-title> Aspirin </v-card-title>
+                <v-card-title> {{ cardi.name }} </v-card-title>
 
                 <v-card-subtitle> 1,000 миллиграм </v-card-subtitle>
                 <v-card-text>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn @click="shirheg++" icon color="orange lighten-2" text>
+                  <v-btn
+                    @click="cardi.quantity++"
+                    icon
+                    color="orange lighten-2"
+                    text
+                  >
                     <v-icon>mdi-plus</v-icon>
                   </v-btn>
                   <v-text-field
                     name="name"
                     id="id"
-                    v-model="shirheg"
+                    v-model="cardi.quantity"
                     label="Тоо ширхэг"
                     color="teal"
                   ></v-text-field>
-                  <v-btn @click="shirheg--" icon color="orange lighten-2" text>
+                  <v-btn
+                    @click="cardi.quantity--"
+                    icon
+                    color="orange lighten-2"
+                    text
+                  >
                     <v-icon>mdi-minus</v-icon>
                   </v-btn>
                   <v-spacer></v-spacer>
@@ -188,6 +195,48 @@ export default {
       valid: false,
       firstname: "",
       lastname: "",
+      toolsdata: [
+        {
+          quantity: 1,
+          name: "Боолт",
+          img: "https://www.narescue.com/media/catalog/product/cache/6c9c2a8706ce872329c582c5a62c8bc4/3/0/30-0027_b_2.jpg",
+        },
+        {
+          quantity: 1,
+          name: "Увч",
+          img: "https://cdn.zochil.shop/e99cef8f-3d4b-45db-aa11-b50481ec6abd_t500.jpg",
+        },
+        {
+          quantity: 1,
+          name: "Солюкс",
+          img: "https://a.allegroimg.com/s1024/0c6739/e777c57a450aa4e4d5d1e7a48e3a",
+        },
+        {
+          quantity: 1,
+          name: "Электрофорез",
+          img: "https://palikha-clinic.ru/wp-content/uploads/2021/08/i-e1630322696713.jpg",
+        },
+        {
+          quantity: 1,
+          name: "Улаан гэрэл",
+          img: "http://cdn.zochil.shop/01cf6267-6156-4cc0-ab65-8bfdd10c8a5c_t1500.jpg",
+        },
+        {
+          quantity: 1,
+          name: "Хануур",
+          img: "https://www.jaseng.mn/wp-content/uploads/2015/12/aaaaaa.jpg",
+        },
+        {
+          quantity: 1,
+          name: "Бумба",
+          img: "https://back.emonos.mn/media/product/image_1024.png",
+        },
+        {
+          quantity: 1,
+          name: "Утлага",
+          img: "https://cdn.greensoft.mn/uploads/site/899/product/20200825181312_e0f00fdfc0917f5178862e875b018bc4.jpg",
+        },
+      ],
       nameRules: [
         (v) => !!v || "Төхөөрөмжийн нэрийг оруулна уу",
         (v) => v.length <= 10 || "Name must be less than 10 characters",
